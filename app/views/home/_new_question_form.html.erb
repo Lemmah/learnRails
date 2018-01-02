@@ -10,18 +10,18 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Your Email Address:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <label for="email-address" class="col-form-label">Your Email Address:</label>
+            <input type="email" class="form-control" id="email-address" required>
           </div>
           <div class="form-group">
-            <label for="message-text" class="col-form-label">Your Question:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <label for="question-asked" class="col-form-label">Your Question:</label>
+            <textarea class="form-control" id="question-asked" required></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Ask Question</button>
+        <button type="button" class="btn btn-success" type="submit">Ask Question</button>
       </div>
     </div>
   </div>
