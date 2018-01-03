@@ -7,7 +7,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="/question" method="POST">
+      <%= form_for :question, url: '/question', html: { class: 'form-horizontal'} do %>
         <div class="modal-body">
           <div class="form-group">
             <label for="email-address" class="col-form-label">Your Email Address:</label>
@@ -22,7 +22,7 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="submit" class="btn btn-success">Ask Question</button>
         </div>
-      </form>
+      <% end %>
     </div>
   </div>
 </div>
