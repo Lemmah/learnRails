@@ -33,36 +33,9 @@
       </div>
     <% end %>
   </div>
-  <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top" src="https://system.na1.netsuite.com/core/media/media.nl?id=3738002&c=589178&h=cd9e47a89ed774871723" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">user@email.com asked:</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Asked 3 days ago</small>
-      </div>
+  <% if @question.answers.empty? %>
+    <div class="alert alert-info">
+     No Answers yet, be the first to answer!
     </div>
-    <div class="card">
-      <img class="card-img-top" src="https://system.na1.netsuite.com/core/media/media.nl?id=3738002&c=589178&h=cd9e47a89ed774871723" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">user@email.com asked:</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Asked 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="https://system.na1.netsuite.com/core/media/media.nl?id=3738002&c=589178&h=cd9e47a89ed774871723" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">user@email.com asked:</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Asked 20 mins ago</small>
-      </div>
-    </div>
-  </div>  
+  <% end %>
 </div>
