@@ -13,7 +13,7 @@
         </div>
         <div class="card-footer">
           <small class="text-muted">Asked <%= time_ago_in_words question.created_at %> ago.</small>
-          <small><a  class="btn btn-success btn-sm" href="/questions/12">View Answers</a></small>
+          <small><a  class="btn btn-success btn-sm" href="<%= question_path(question) %>">View Answers</a></small>
         </div>
       </div>
     <% end %>
