@@ -8,7 +8,7 @@
         </button>
       </div>
       <%= form_for :answer, url: '/answers', html: { class: 'form-horizontal'} do %>
-        <input type="hidden" value="<%= @question.id %>" />
+        <input type="hidden" value="<%= @question.id %>" name="answer[question_id]" />
         <div class="modal-body">
           <div class="form-group">
             <label for="email-address" class="col-form-label">Your Email Address:</label>
